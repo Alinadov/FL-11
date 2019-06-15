@@ -14,25 +14,24 @@
         <div id="content" role="main">
 
           <header>
-          <img src="logo.png" alt="logo_epam">
-
-          <h1>HTML Elements</h1>
-
-          <hr>
-
+            <img src="logo.png" alt="logo_epam">
+            <h1>HTML Elements</h1>
+            <hr>
           </header>
 
           <nav>
-            <a href="">Home</a>
-            <a href="">Headers</a>
-            <a href="">Text</a>
-            <a href="">List</a>
-            <a href="">Table</a>
-            <a href="">Blockquotes</a>
+            <a href="index.html"><b>Home</b></a>
+            <a href="#"><b>Headers</b></a>
+            <a href="#text"><b>Text</b></a>
+            <a href="#list"><b>List</b></a>
+            <a href="#table"><b>Table</b></a>
+            <a href="#quote"><b>Blockquotes</b></a>
             <hr>
           </nav>
 
-          <section>
+          <section id="text">
+            <!-- <a name="text"></a> -->
+            
             <p>
               Lorem ipsum dolor sit amet,
               <a href="">test link</a>
@@ -57,14 +56,13 @@
               and
               <abbr title="Cascading Style Sheets">CSS</abbr>               
               are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. To copy a file type
-              COPY
-              filename.
-              Dinner`s at 5:00.
-              Let�s make that 7.
-              This text has been struck.
+              <code>COPY</code>
+              <i>filename.</i>
+              <del>Dinner`s at 5:00.</del>
+              <mark>Let's make that 7.</mark>              
+              <!-- <ins>Let's make that 7.</ins> -->
+              This <del>text</del> has been struck.
             </p>
-
-
 
           <hr>
 
@@ -81,41 +79,48 @@
 
           <hr>
 
-          </section>
-
-          <section>
-            
+                   
             <h2>Text formats</h2>
             <h3>Article Text</h3>
-            <h2>Article title</h2>
-            <h3>Article description</h3>
 
-            <h3>Preformatted Text</h3>
+            <article>
+              <h2>Article title</h2>
+              <h3>Article description</h3>
+            </article>
+
+            <h4>Preformatted Text</h4>
             
             <pre>
 <b>Text</b>
-    in a pre element
-              is displayed in a fixed-width
-              font, and it preserves
-              both           spaces and
-              line breaks
+  in a <b>pre</b> element
+    is displayed in a fixed-width
+font, and it preserves
+both           spaces and
+    line breaks
             </pre>
 
-            <h3>This is code</h3>
+            <h4>This is code</h4>
 
-            
-              <code><pre>
-              .wrapper {
+            <pre>
+              <code>
+.wrapper {
   display: flex;
   vertical-align: middle;
   justify-content: center;
-}</pre>
-            </code>
+}
+              </code>
+            </pre>
 
+      </section>
+      <section id="list">
+        
+      <!-- <a name="list"></a> -->
           <h3>Unordered Product List</h3>
+
            <ul>
              <li>Eggs</li>
              <li>Meat</li>
+             
              <ul>
                <li>Chicken</li>
                <li>Beef</li>
@@ -125,6 +130,8 @@
            </ul> 
 
           <h3>Ordered TODO List</h3>
+
+          <!-- XX -->
           <ol>
             <li>Relax</li>
             <li>Finish homework</li>
@@ -136,31 +143,41 @@
             <li>Enjoy your day</li>
           </ol>
 
-          <h3>Definition List</h3>
+          <h4>Definition List</h4>
+          
+          <!-- XX -->
 
           <dl>
             <dt>HTML</dt>
-                <dd>HTML is the standard markup language for Web pages</dd>
+                <dd>
+                  HTML is the standard markup language for Web pages
+                </dd>
              <dt>CSS</dt>
-           <dd>CSS describes how HTML elements are to be displayed</dd>
+                <dd>
+                  CSS describes how HTML elements are to be displayed
+                </dd>
             <dt>JavaScript</dt>
-           <dd>JavaScript is the Programming Language for the Web</dd>
-            </dl>
+              <dd>
+                JavaScript is the Programming Language for the Web
+              </dd>
+          </dl>
 
 
-            <span>Select option</span>
+          <label>Select option 
             <select name="select">
               <option value="HTML">HTML</option>
               <option value="CSS">CSS</option>
               <option value="JS">JS</option>
             </select>
+          </label>
             
-            <hr>
-            <hr>
-
-            <h2>Table</h2>
+          <hr>
+          <hr>
+</section>
+          <a name="table"></a>
+          <h2>Table</h2>
             <table>
-           <!-- <caption>Prices for buses</caption> -->
+           <!-- <caption>Table</caption> -->
         <thead>
         <tr>
             <th>Cities</th>
@@ -184,7 +201,7 @@
             <td>Kharkiv</td>
             <td>Angular</td>
         </tr>
-<tr>
+        <tr>
             <td>Kyiv</td>
             <td>ReactJS</td>
         </tr>
@@ -192,7 +209,7 @@
     </tbody>
 </table>
 
-
+<a name="quote"></a>
 <h2>Blockquotes</h2>
 
         <p>Let's keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
@@ -207,15 +224,28 @@ like an oracle. These are all things that would have been considered magic a few
 
         <hr>
 
-        <form action="">
+        <form action="#">
+            <label for="firstName">First name:</label>
+            <input type="text" id="name"> <br>
+            <label for="secondName">Second name:</label>
+            <input type="text" id="secondName"> <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email"><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password"><br>
+            <textarea cols="30" rows="5"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+
+<!--         <form action="">
           First name:<input type="text"><br>
           Second name:<input type="text"><br>
           Email:<input type="text"><br>
           Password:<input type="text"><br>
-          <textarea name="" id="" cols="30" rows="10"></textarea><br>
+          <textarea name="" id="" cols="30" rows="5"></textarea><br>
            <input type="submit" name="Submit" value="Submit">
            <button>Submit</button>
-        </form>
+        </form> -->
 
           </section>
 
