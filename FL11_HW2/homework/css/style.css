@@ -7,13 +7,13 @@
     .tm-main-content,
     .padding-medium,
     .carousel,
-    .tm-content-box {
+    .tm-content-box,
+    .tm-banner {
         padding: 0;
         margin: 0;
     }
 
     .tm-banner {
-        padding: 0;
         margin-bottom: 30px;
     }
 
@@ -27,12 +27,12 @@
         display: none;
     }  
 
-    .tm-section-title {
+    .tm-section-title,
+    h2 {
         margin: 20px 0;
     }
 
     h2 {
-        margin: 10px 0;
         text-transform: uppercase;
         font-weight: 300;
         color: lightskyblue;
@@ -172,16 +172,21 @@
 
     #contact_name,
     #contact_email,
-    #contact_subject {
-        border-width: 0 0 2px;
+    #contact_subject,
+    #contact_message,
+    .btn {
         border-color: lightskyblue;
         border-radius: 5px;
     }
 
+    #contact_name,
+    #contact_email,
+    #contact_subject {
+        border-width: 0 0 2px;
+    }
+
     #contact_message {
         border-width: 2px;
-        border-radius: 5px;
-        border-color: lightskyblue;
         resize: none;
     }
 
@@ -208,7 +213,6 @@
     .btn {
         border-radius: 0;
         border-width: 2px;
-        border-color: lightskyblue;
         background: #ffff;
         float: right;
         color: lightskyblue;
