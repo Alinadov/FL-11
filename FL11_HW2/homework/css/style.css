@@ -15,28 +15,40 @@ write your code here
         background-color: white;
     }
 
-    div {
+    .tm-main-content,
+    .padding-medium,
+    .carousel,
+    .tm-content-box {
         padding: 0;
+        margin: 0;
     }
 
-    .tm-main-content {
-        padding-top: 0;
+    .tm-banner {
+        padding: 0;
+        margin-bottom: 30px;
     }
-
-
 
     .tm-sidebar, 
     .tm-team-img, 
     #about, 
     .tm-content-box .boxes.gallery-container,
     .carousel-indicators,
+    /* .tm-content-box, */
+    .blocks .tm-content-box,
+    /* .tm-content-box.flex-2-col + div, */
     #ideas + .tm-content-box
     {
-        /* visibility: hidden; */
         display: none;
     }  
 
+    .tm-section-title {
+        /* padding: 0; */
+        margin: 10px 0;
+    }
+
     h2 {
+        /* padding: 10px 0; */
+        margin: 10px 0;
         text-transform: uppercase;
         font-weight: 300;
         color: lightskyblue;
@@ -47,6 +59,41 @@ write your code here
         text-align: center;
         max-width: 100%;
     }
+
+    .heading ol {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        display: block;
+        margin: auto;
+        width: 30%;
+        text-align: left;
+    }
+
+    li:nth-child(2n) {
+        text-align: right;
+    }
+
+    li a {
+        color: black;
+        display: block;
+    }
+
+    li a::first-letter {
+        color: lightskyblue;
+        font-weight: 300;
+        font-size: 2em;
+    }
+
+   
+
+
+    /* p {
+        font-size: 17px;
+    } */
 
     /* #home {
         background-color: #ffff;
