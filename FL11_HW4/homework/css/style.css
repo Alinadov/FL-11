@@ -1,0 +1,251 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+	position: relative;
+}
+
+
+  a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	background: #F3F3F3;
+}
+
+.wrapper {
+	width: 92%;
+	margin: 0 auto;
+  }
+  
+
+
+.lorem_nav {
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	height: 100px;
+
+}
+
+.lorem_nav-logo {
+	margin-left: 50px;
+}
+
+.lorem_nav-logo-text {
+	color: #FFFFFF;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 13px;
+}
+
+.lorem_nav-button {
+	display: flex;
+	width: 115px;
+	justify-content: space-between;
+
+	margin-right: 50px;
+}
+
+.lorem_nav-button-link {
+	color: #FFFFFF;
+	font-size: 13px;
+}
+
+
+.lorem_header {
+	min-height: 100vh;
+	background-image: url(../img/sample2.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.lorem_header_wrap {
+	text-align: center;
+	max-width: 625px;
+}
+
+.lorem_header-main {
+	text-transform: uppercase;
+	font-size: 50px;
+	color: #ffff;
+	font-weight: 300;
+	letter-spacing: 13px;
+}
+
+.lorem_header-ampersand {
+	font-size: 200%;
+	font-weight: 200;
+}
+
+.lorem_header-desciption {
+	font-size: 15px;
+	color: #ffff;
+}
+
+.lorem_nav_buttons {
+	margin-bottom: 70px; 
+}
+
+.lorem_nav_buttons-link {
+	color: #FFFFFF;
+	display: inline-block;
+	height: 40px;
+
+	border: 2px solid;
+
+	font-size: 13px;
+	font-weight: 300;
+	text-align: center;
+	text-decoration: none;
+	text-transform: capitalize;
+
+	padding: 10px 50px;
+	margin: 0 40px;
+}
+
+.lorem_career-article  {
+	background: linear-gradient(to top right, #F3F3F3 50%, #000000 50%);
+	display: flex;
+	flex-direction: column;
+	padding: 0 4% 50px;
+}
+
+.lorem_career-article p {
+	width: 50%;
+}
+
+.lorem_career-article p:nth-child(1) {
+	padding: 0 0 15px 10px;
+	font-size: 0.7rem;
+	align-self: flex-end;
+	color: #FFFFFF;
+  }
+
+  .lorem_career-article p:nth-child(2) {
+	width: 500px;
+	padding-top: 50px;
+	padding-right: 50px;
+	font-size: 0.85rem;
+	align-self: flex-start;
+  }
+
+
+  .lorem_about {
+	margin-top: -15px;
+  }
+
+  .lorem_about h2 {
+	font-size: 25px;
+	letter-spacing: .05rem;
+	text-align: center;
+	margin-bottom: 30px;
+	font-weight: 300;
+  }
+
+.lorem_about-artcle {
+	height: 300px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+  }
+
+.lorem_about-artcle-img,
+.lorem_about-artcle-text {
+  width: 50%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lorem_about-artcle-img--sample1 {
+	background: center / cover url("../img/sample-1.jpg");
+  }
+
+  .lorem_about-artcle-img--sample2 {
+	background: center / cover url("../img/sample-2.jpg");
+  }
+
+
+.lorem_about-artcle-text-paragraph {
+	width: 90%;
+	font-size: 15px;
+	margin-bottom: 10px;
+	text-align: center;
+  }
+
+  .btn-likes {
+	align-self: flex-end;
+	font-size: .7rem;
+	border: 2px solid #FFFFFF;
+	padding: 3px 7px;
+	background: rgba(0, 0, 0, .4);
+  }
+
+  .btn-likes span {
+	  color: #FFFFFF;
+  }
+
+.geodata {
+	font-size: 12px;
+	color: #FFFFFF;
+  }
+
+.geodata-place {
+	  font-weight: 600;
+  }
+
+.lorem_showmore {
+	background-color: #FFFFFF;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+  }
+
+.lorem_showmore_img {
+	padding: 10px;
+  width: 21%;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lorem_showmore_img--nlist1 {
+	background: left / cover url("../img/news-list-1.jpg");
+  }
+
+  .lorem_showmore_img--nlist2 {
+	background: left / cover url("../img/news-list-2.jpg");
+  }
+
+  .lorem_showmore_img--nlist3 {
+	background: left / cover url("../img/news-list-3.jpg");
+  }
+
+  .lorem_showmore_img--nlist4 {
+	background: left / cover url("../img/news-list-4.jpg");
+  }
