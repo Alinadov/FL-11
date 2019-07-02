@@ -27,6 +27,10 @@ html, body {
 	margin: 0 auto;
   }
   
+.wrapper--white {
+	padding-top: 20px;
+	background: #FFFFFF;
+}
 
 
 .lorem_nav {
@@ -191,7 +195,7 @@ html, body {
 
 .lorem_about-artcle-text-paragraph {
 	width: 90%;
-	font-size: 15px;
+	font-size: 13px;
 	margin-bottom: 10px;
 	text-align: center;
   }
@@ -218,20 +222,25 @@ html, body {
   }
 
 .lorem_showmore {
+	padding-top: 20px;
+	padding-bottom: 20px;
 	background-color: #FFFFFF;
+  }
+
+.lorem_showmore-wrapper {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-  }
+}
 
 .lorem_showmore_img {
 	padding: 10px;
-  width: 21%;
-  height: 225px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+	width: 21%;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .lorem_showmore_img--nlist1 {
@@ -248,4 +257,89 @@ html, body {
 
   .lorem_showmore_img--nlist4 {
 	background: left / cover url("../img/news-list-4.jpg");
+  }
+
+  .lorem_showmore-link {
+	background: rgba(9, 119, 116, .75);
+	text-align: center;
+	font-size: .6rem;
+	font-weight: bold;
+	letter-spacing: .1rem;
+	padding: 5px 0;
+	width: 100%;
+	color: #FFFFFF;
+  }
+
+  .btn--showmore {
+	display: block;
+	width: 220px;
+	padding: 10px 0;
+	font-size: .8rem;
+	text-align: center;
+	margin: 35px auto 0;
+	background: #097774;
+	color: #FFFFFF;
+  }
+
+  .lorem_subscribe {
+	padding-top: 35px;
+  }
+
+  .lorem_subscribe-text {
+	font-size: .7rem;
+  }
+  
+  .lorem_form {
+	margin: 10px 0 30px;
+	text-align: right;
+  }
+
+.btn--subscribe {
+	padding: 7px 5px;
+	font-size: .7rem;
+	color: #FFFFFF;
+	background: #097774;
+	border: 1px solid #097774;
+	color: #FFFFFF;
+}
+
+.lorem_form label {
+	margin-right: 10px;
+  }
+  
+  .lorem_form input {
+	color: #000000;
+	border: 1px solid #000000;
+	background: #F3F3F3;
+	padding: 7px 5px;
+	font-size: .7rem;
+	width: 110px;
+  }
+  
+  .lorem_form input::placeholder {
+	color: black;
+  }
+
+  .lorem_footer {
+	background: #FFFFFF;
+	font-size: 12px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center; 
+  }
+
+  .lorem_footer-copyright {
+	color: #9E9E9E;  
+	margin-left: 20px;
+  }
+
+  .lorem_footer-links {
+	  display: flex;
+  }
+
+  .lorem_footer-links-item {
+	padding: 15px;
+	display: block;
+	color: #000000;
   }
