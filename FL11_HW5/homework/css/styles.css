@@ -333,6 +333,14 @@ h1, h2, h3, p, a, span {
     flex-direction: column;
   }
 
+  .blog-entry .blog-descript {
+    flex-direction: column;
+  }
+
+  .blog-entry:nth-child(2n) .blog-descript {
+    flex-direction: column;
+  }
+
   .text-block {
     flex-direction: column;
   }
