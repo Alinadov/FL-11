@@ -6,14 +6,14 @@ let triAngle = {
 
 let checkTriAngle = 'Triangle doesn’t exist';
 
-if ( triAngle.a === triAngle.b && triAngle.b === triAngle.c && triAngle.a === triAngle.c ) {
+if (triAngle.a === 0 || triAngle.b === 0 || triAngle.c === 0) {
+    checkTriAngle = 'Triangle doesn’t exist';
+} else if (isNaN(triAngle.a) || isNaN(triAngle.b) || isNaN(triAngle.c)) {
+    checkTriAngle = 'Triangle doesn’t exist';
+} else if ( triAngle.a === triAngle.b && triAngle.b === triAngle.c && triAngle.a === triAngle.c ) {
     checkTriAngle = 'Equivalent triangle';    
 } else if ( triAngle.a === triAngle.b || triAngle.b === triAngle.c || triAngle.a === triAngle.c ) {
     checkTriAngle = 'Isosceles triangle';
-} else if (isNaN(triAngle.a) || isNaN(triAngle.b) || isNaN(triAngle.c)) {
-    checkTriAngle = 'Triangle doesn’t exist';
-} else if (triAngle.a === 0 || triAngle.b === 0 || triAngle.c === 0) {
-    checkTriAngle = 'Triangle doesn’t exist';
 } else {
     checkTriAngle = 'Normal triangle';
 }
