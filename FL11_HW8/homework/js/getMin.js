@@ -1,4 +1,4 @@
-function getMin(nmbrs) {
+function getMin() {
    let min = arguments[0];
   for (let i = 1; i < arguments.length; ++i) {
       if (arguments[i] < min) {
