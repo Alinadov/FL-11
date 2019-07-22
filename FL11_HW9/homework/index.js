@@ -170,7 +170,7 @@ function getAmountOfAdultPeople(data) {
     }).length;
   }
 
-// getAmountOfAdultPeople(data);
+getAmountOfAdultPeople(data);
 
 
 // --------9
